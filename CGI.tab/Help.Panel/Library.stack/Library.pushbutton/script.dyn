@@ -1,0 +1,133 @@
+{
+  "Uuid": "d647a849-7a41-4836-a007-2b0f98d4bd66",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "Open Folder",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Function, DynamoCore",
+      "FunctionSignature": "a3bf380a-751e-49bd-a787-65ec47dd2d64",
+      "FunctionType": "Graph",
+      "NodeType": "FunctionNode",
+      "Id": "f7ac7ab8cf1c4c9dbb2b197164464c71",
+      "Inputs": [
+        {
+          "Id": "c10d588dc0394fc9bbfbd0e06fe4c6d4",
+          "Name": "DirectoryPath",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "f954493c568b4c72b2f43f92525586b3",
+          "Name": "OUT",
+          "Description": "return value",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Opens windows explorer at specified directory."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "\\\\Svch01102\\rsb$\\PRO\\000_Administration\\022_Razmena\\Revit Family",
+      "Id": "7b0c0fc2301342709f6a90af1f72354d",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "66c9ead8713a4818b6c37385cea0f2a5",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "66c9ead8713a4818b6c37385cea0f2a5",
+      "End": "c10d588dc0394fc9bbfbd0e06fe4c6d4",
+      "Id": "151d9f64b6df4d35bc4f8ad57c985949"
+    }
+  ],
+  "Dependencies": [
+    "a3bf380a-751e-49bd-a787-65ec47dd2d64"
+  ],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Morpheus",
+      "Version": "2019.8.26",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "f7ac7ab8cf1c4c9dbb2b197164464c71"
+      ]
+    }
+  ],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.6.1.8786",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "OpenDirectory",
+        "Id": "f7ac7ab8cf1c4c9dbb2b197164464c71",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 698.5,
+        "Y": 360.0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "7b0c0fc2301342709f6a90af1f72354d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 313.0,
+        "Y": 360.0
+      }
+    ],
+    "Annotations": [],
+    "X": 0.0,
+    "Y": 0.0,
+    "Zoom": 1.0
+  }
+}
